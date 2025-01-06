@@ -11,4 +11,10 @@ public interface ProductService {
 	List<Product> getAllProducts();
 	
 	Product getById(int productId);
+	
+	List<Product> findProductsByOrderByPrice();
+	
+	List<Product> findProductsByOrderByDescription();
+	
+	List<Product> findProductContains(String keyword);
 }
