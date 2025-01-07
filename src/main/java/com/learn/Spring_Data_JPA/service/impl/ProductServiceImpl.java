@@ -55,6 +55,16 @@ public class ProductServiceImpl implements ProductService{
 		return productRepository.findProductsByDescriptionContaining(keyword);
 	}
 
+	@Override
+	public void deleteProduct(int productId) {
+	productRepository.deleteById(productId);
+		
+	}
+
+	@Override
+	public Product updateProduct(Product product) {
+		return productRepository.save(product);
+	}
 
 
 

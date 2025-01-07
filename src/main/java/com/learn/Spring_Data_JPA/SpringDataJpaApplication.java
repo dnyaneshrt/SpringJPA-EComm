@@ -67,7 +67,7 @@ public class SpringDataJpaApplication implements CommandLineRunner{
 //	List<Product> products=productService.findProductsByOrderByDescription();
 //	System.out.println(products);
 	
-	List<Product> product=productService.findProductContains("tv");
-	System.out.println(product);
+//	List<Product> product=productService.findProductContains("tv");
+//	System.out.println(product);
 }
 }

@@ -17,4 +17,8 @@ public interface ProductService {
 	List<Product> findProductsByOrderByDescription();
 	
 	List<Product> findProductContains(String keyword);
+	
+	void deleteProduct(int productId);
+	
+	Product updateProduct(Product product);
 }
